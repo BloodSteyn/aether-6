@@ -2,6 +2,8 @@
 
 A browser-based ambient synth played with a 3Dconnexion SpaceNavigator. All six axes of the puck shape the sound, a three.js visualiser reacts to the audio, and you can jam over a built-in drum and bass sequencer or an imported MIDI file.
 
+**[Play it in your browser](https://bloodsteyn.github.io/aether-6/)** (Chrome or Edge).
+
 Everything lives in a single `index.html`. There is no build step and no dependencies to install.
 
 https://github.com/user-attachments/assets/f774ea21-9014-4332-8c8a-b8162bd7a5d9
@@ -23,15 +25,15 @@ https://github.com/user-attachments/assets/f774ea21-9014-4332-8c8a-b8162bd7a5d9
 
 ## Running it
 
-You need Chrome or Edge, because the puck is read through WebHID, and an internet connection so three.js can load from a CDN.
+Open **https://bloodsteyn.github.io/aether-6/** in Chrome or Edge, click **Start**, then **Connect SpaceNavigator** and pick the puck from the list.
 
-Serve the folder locally:
+Chrome or Edge is required because the puck is read through WebHID. An internet connection is needed so three.js can load from a CDN.
+
+To run it from a local copy instead, serve the folder and open `http://localhost:8642`:
 
 ```bash
 python -m http.server 8642 --bind 127.0.0.1
 ```
-
-Open `http://localhost:8642`, click **Start**, then **Connect SpaceNavigator** and pick the puck from the list.
 
 ## Controls
 
@@ -72,7 +74,7 @@ Drop a `.mid` file anywhere on the page, or click the drop zone. Tracks can be m
 
 ## Notes and limitations
 
-- **Hardware status**: the device code follows the SpaceNavigator's documented HID reports, but has not yet been verified against a physical puck. If an axis feels backwards, use its invert box.
+- **Hardware status**: tested with a SpaceNavigator for Notebooks. Other 3Dconnexion devices should work but are untested; if an axis feels backwards, use its invert box.
 - **Device not listed**: Shift-click the Connect button to list every 3Dconnexion or Logitech HID device.
 - **3Dconnexion driver**: the driver may also scroll or zoom the page while you play. Give the browser an empty profile in the driver, or pause the driver.
 - **Background tabs**: browsers throttle hidden tabs, so timing gets choppy when the tab is not visible.
