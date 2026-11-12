@@ -4,6 +4,10 @@ A browser-based ambient synth played with a 3Dconnexion SpaceNavigator. All six 
 
 Everything lives in a single `index.html`. There is no build step and no dependencies to install.
 
+[![A short clip of AETHER·6: the sequencer, sparkle notes and a MIDI overlay](docs/demo.gif)](docs/demo.mp4)
+
+The clip above is a silent preview. [Watch the full 30-second demo with sound](docs/demo.mp4).
+
 ![AETHER·6 playing over a MIDI file with the sequencer running](docs/screenshot-ui.png)
 
 ## Features
