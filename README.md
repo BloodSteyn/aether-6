@@ -79,3 +79,7 @@ Drop a `.mid` file anywhere on the page, or click the drop zone. Tracks can be m
 ## Credits
 
 The orb shader uses the 3D simplex noise function by Ian McEwan and Ashima Arts (MIT licence). Rendering is done with [three.js](https://threejs.org/).
+
+## Licence
+
+Released under the [MIT licence](LICENSE).
